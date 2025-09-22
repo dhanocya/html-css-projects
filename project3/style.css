@@ -9,6 +9,8 @@ body{
     height: 100%;
     font-family: sans-serif;
     font-size: 20px;
+    background: black;
+    color: green;
 }
 
 header{
@@ -120,10 +122,30 @@ span{
 
 .card{
     width: 400px;
-    background-color: red;
+    background-color: rgb(6, 70, 6);
+    margin: 1em;
 }
 
 .card > img {
     width: 100%;
     object-fit: cover;
+}
+
+.photo > img {
+    width: 100%;
+    padding: 0.2em;
+}
+
+footer{
+    min-height: 50vh;
+    background-color: rgb(1, 49, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.fotbox{
+    min-width: 200px;
 }

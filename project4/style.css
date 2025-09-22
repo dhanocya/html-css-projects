@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    font-size: 24px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: capitalize;
+}
+
+button{
+    padding: 1em;
+    background: black;
+    color: white;
+    border-radius: 20px;
+    min-width: 7rem;
+}
+
+span{
+    color: rgb(183, 196, 207);
+}
+
+header,nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+    margin: 1em;
+}
+
+.hero{
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text,.photo{
+    width: 50%;
+    min-width: 300px;
+    padding: 0.5em;
+}
+
+.text > h1,p,button{
+    margin: 1em 0em;
+}
+
+section{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.card{
+    background: rgb(183, 196, 207);
+}
