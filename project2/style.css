@@ -9,6 +9,7 @@ body{
     height: 100%;
     font-family: sans-serif;
     font-size: 20px;
+    background: rgb(112, 98, 98);
 }
 
 header{
@@ -42,7 +43,9 @@ section{
 }
 
 .gallary > img {
-    width: 300px;
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
 }
 
 footer{
@@ -74,4 +77,8 @@ footer{
 ul > li {
     text-decoration: none;
     list-style: none;
+}
+
+.extra{
+    flex-direction: column;
 }

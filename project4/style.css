@@ -66,8 +66,17 @@ section{
     justify-content: center;
     align-items: center;
     gap: 1em;
+    flex-wrap: wrap;
 }
 
 .card{
     background: rgb(183, 196, 207);
+}
+
+.info{
+    padding: 0.5em;
+}
+
+.show{
+    flex-direction: row;
 }
