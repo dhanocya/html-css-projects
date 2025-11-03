@@ -82,3 +82,9 @@ ul > li {
 .extra{
     flex-direction: column;
 }
+
+.showImages > img{
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+}

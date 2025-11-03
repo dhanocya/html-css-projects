@@ -11,12 +11,14 @@
   <header>
     <h1>Berbers</h1>
 
-    <ul>
+    <ul class="links">
       <li>home</li>
       <li>about</li>
       <li>expiriance</li>
       <li>Services</li>
     </ul>
+
+    <span class="show">=</span>
   </header>
 
   <main>
@@ -138,6 +140,19 @@
       <li>faq</li>
     </div>
   </footer>
+
+  <script>
+    let links = document.querySelector(".links")
+    let show = document.querySelector(".show")
+    let body = document.querySelector("body")
+    
+    show.style.display = "none"
+
+    if (window.innerWidth == "375px"){
+      console.log("hello pro")
+    }
+
+  </script>
 </body>
 
 </html>
