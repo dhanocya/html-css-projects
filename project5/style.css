@@ -1,0 +1,18 @@
+li {
+    background: rgb(108, 110, 106);
+    font-size: 1.6em;
+}
+
+li > span {
+    position: absolute;
+    right: 50px;
+}
+
+.hello{
+    margin: 0em 2em;
+}
+
+.completed{
+    text-decoration: line-through;
+    background-color: gray;
+}

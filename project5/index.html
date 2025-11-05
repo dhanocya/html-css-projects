@@ -5,19 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>todo app</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
   </head>
   <body>
     <main
       class="bg-black w-screen h-screen text-white flex justify-center items-center"
     >
       <div class="bg-pink-900 h-9/10 w-9/10 overflow-hidden">
-        <div class="bg-pink-800 h-9/10 overflow-auto">
-          <p class="bg-pink-600 text-2xl m-1">this is dummy task</p>
-        </div>
+        <ul class="container bg-pink-800 h-9/10 overflow-auto"></ul>
 
         <div class="bg-pink-600 h-20 flex">
-          <input class="bg-black w-5/10 h-20 text-2xl p-1 border-1 bg-pink-600" type="text" />
-          <button class="btn bg-pink-400 w-5/10 h-20 text-2xl">add task</button>
+          <input
+            class="input bg-black w-5/10 h-20 text-2xl p-1 border-1 bg-pink-600"
+            type="text"
+          />
+          <button
+            class="btn bg-pink-400 w-5/10 h-20 text-2xl"
+            onclick="addtask()"
+          >
+            add task
+          </button>
         </div>
       </div>
     </main>
@@ -38,9 +49,36 @@
       btn.addEventListener("click", () => {
         gsap.from(btn, {
           y: 10,
-          duration: 0.3
-        })
-      })
+          duration: 0.3,
+        });
+      });
+
+      // main logic yahan hai
+      const input = document.querySelector(".input");
+      const container = document.querySelector(".container");
+
+      function addtask() {
+        if (input.value === "") {
+          window.alert("write a task");
+        } else {
+          let li = document.createElement("li");
+          li.innerHTML = input.value;
+          container.appendChild(li);
+
+          let iconDelete = `<i class="fa-solid fa-trash"></i>`;
+          let span = document.createElement("span");
+          span.innerHTML = iconDelete;
+          li.appendChild(span);
+
+          let iconMark = `<i class="fa-solid fa-circle-check"></i>`;
+          let mark = document.createElement("span");
+          mark.innerHTML = iconMark;
+          mark.classList.add("hello")
+          li.appendChild(mark);
+        }
+        input.value = "";
+      }
+
     </script>
   </body>
 </html>
